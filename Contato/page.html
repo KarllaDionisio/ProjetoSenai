@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>controle de estoque</title>
+    <script src="script.js"></script>
 </head>
 <body>
     <div>
@@ -16,4 +17,30 @@
         </ul>
     </div>
     </body>
+    <a href="../Menu/page.html">VOLTAR</a>
+    <h1>Contato</h1>
+    <h2>Insira dados iniciais para envio</h2>
+
+    <label for="nome">seu nome</label>
+    <input type="text" id="nome" placeholder="digite seu nome">
+
+    <br><br>
+
+    <label for="mensagem">observações</label>
+    <textarea id="mensagem"placeholder="digite suas observações"></textarea>
+
+    <br><br>
+
+    <button onclick="conferirMensagemWhatsapp()">Conferir mensagem</button>
+
+
+    <br></br>
+
+    <p>Nome: <span id="confNome"></span></p>
+    <p>Observações: <span id= "confMsg"></span></p>
+    <p>Date: <span id="confDate"></span></p>
+
+    <button onclick="enviar()">Enviar mensagem</button>
+
+</body>
 </html>
