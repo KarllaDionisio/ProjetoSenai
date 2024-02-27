@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>controle de estoque</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+    <style>
+        .entrada{
+           padding: 10px;
+           min-width:300px ;
+        
+        }
+    </style>
 </head>
 <body>
     <a href="../Menu/page.html">VOLTAR</a>
@@ -12,11 +19,11 @@
     
     <br><br>
     <div>
-        <input type="text" placeholder="Nome do Produto" id="nome">
+        <input class="entrada" type="text" placeholder="Nome do Produto ( sem acentos ou ç )" id="nome">
         <br><br>
-        <input type="number" placeholder="Valor do Produto" id="valor">
-        <br><br>
-        <input type="number" placeholder="Quantidade" id="quantidade">
+        <!-- <input type="number" placeholder="Valor do Produto" id="valor">
+        <br><br> -->
+        <input class="entrada" type="number" placeholder="Quantidade" id="quantidade">
         <br><br>
     </div>
     <div>
@@ -30,6 +37,7 @@
                     <th>Nome</th>
                     <th>Valor</th>
                     <th>Quantidade</th>
+                    <th>Total</th>
                 </tr>
             </thead>
         <tbody></tbody>
